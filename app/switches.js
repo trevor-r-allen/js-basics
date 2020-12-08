@@ -7,7 +7,60 @@
     // output: 7
 
 function daysPosition(day, offset) {
-
+    console.log(day + offset)
+    switch (day) {
+        case "sunday":
+          if(offset == true){
+            return 7;
+          }
+          else {
+            return 1;
+          }
+        case "monday":
+          if(offset == true){
+            return 1;
+          }
+          else {
+            return 2;
+          }
+        case "tuesday":
+          if(offset == true){
+            return 2;
+          }
+          else {
+            return 3;
+          }
+        case "wednesday":
+          if(offset == true){
+            return 3;
+          }
+          else {
+            return 4;
+          }
+        case "thursday":
+          if(offset == true){
+            return 4;
+          }
+          else {
+            return 5;
+          }
+        case "friday":
+          if(offset == true){
+            return 5;
+          }
+          else {
+            return 6;
+          }
+        case "saturday":
+          if(offset == true){
+            return 6;
+          }
+          else {
+            return 7;
+          }
+        default:
+            return "That's not a day of the week";
+    }
 }
 
 
@@ -27,7 +80,29 @@ function daysPosition(day, offset) {
  */
 
  function golfScore(score, par) {
-
+    switch(score, par){
+        case 0:
+            score == 1 || score == par - 3;
+            return "Ace"
+        case 0:
+            score == par - 2;
+            return "Eagle"
+        case 0:
+            score == par - 1;
+            return "Birdie"
+        case 0:
+            score == par;
+            return "Par"
+        case 0:
+            score == par + 1;
+            return "Bogie"
+        case 0:
+            score == par + 2;
+            return "Double Bogie"
+        case 0:
+            score >= par + 3;
+            return "Ouch"
+    }
  }
  
 
