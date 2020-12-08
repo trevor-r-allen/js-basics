@@ -80,27 +80,22 @@ function daysPosition(day, offset) {
  */
 
  function golfScore(score, par) {
-    switch(score, par){
-        case 0:
-            score == 1 || score == par - 3;
+    switch(score){
+        case (score == 1):
             return "Ace"
-        case 0:
-            score == par - 2;
+        case (par - 3):
+            return "Ace"
+        case (par - 2):
             return "Eagle"
-        case 0:
-            score == par - 1;
+        case (par - 1):
             return "Birdie"
-        case 0:
-            score == par;
+        case (par):
             return "Par"
-        case 0:
-            score == par + 1;
+        case (par + 1):
             return "Bogie"
-        case 0:
-            score == par + 2;
+        case (par + 2):
             return "Double Bogie"
-        case 0:
-            score >= par + 3;
+        default:
             return "Ouch"
     }
  }
